@@ -1,0 +1,16 @@
+{
+    "name": "Phisnet",
+    "description": "Phishing Website Detection",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+      "default_popup": "hello.html"
+    },
+    "permissions": [
+      "tabs"
+    ],
+    "host_permissions" : [
+      "http://localhost:5000/*" 
+    ]
+}
+  
