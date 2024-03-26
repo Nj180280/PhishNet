@@ -8,6 +8,9 @@ chrome.tabs.query({active: true, lastFocusedWindow: true}, tabs => {
 });
 
 function modelsender(url){
+    // //Display URL
+    // document.getElementById("url").innerHTML = url;
+
     //to be sent to model
     console.log(url);
     fetch('http://localhost:5000/cextension', {
@@ -48,9 +51,9 @@ function modelsender(url){
         // Handle any errors
         console.log(error)
         document.getElementById("cc").innerHTML= "Server Error Occured";
-
         // Link to web && error handling
     });
 
 }
+
 

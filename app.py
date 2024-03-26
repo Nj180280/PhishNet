@@ -1,6 +1,6 @@
 #importing required libraries
 
-from flask import Flask, request, render_template
+from flask import Flask, request, render_template, jsonify
 import numpy as np
 import pandas as pd
 from sklearn import metrics 

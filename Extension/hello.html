@@ -1,8 +1,27 @@
-<html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
   <body>
-    <h1>Phishnet Web Extension</h1>
-    <h1 id = "prediction"></h1>
-    <h1 id = "cc"></h1>
+    <div class="brand-container">
+      <img src="phishnet logo.png" alt="logo">
+      <p>PhishNet</p>
+    </div>
+    <div class="content">
+      <!-- <div id="url"></div> -->
+      <p class="text">Detecting phishing links securely</p>
+      <p id = "prediction">
+        <svg viewBox="25 25 50 50">
+          <circle r="20" cy="50" cx="50"></circle>
+        </svg>
+      </p> 
+      <div class="buttons">
+        <button class="bt-visit">Visit</button>
+        <button class="bt-report">Report</button>
+      </div>
+      <p id = "cc"></p>
+    </div>
     <script src="popup.js"></script>
   </body>
 </html>
