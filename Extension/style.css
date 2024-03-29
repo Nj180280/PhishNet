@@ -9,7 +9,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #caf0f8;
+    background-color: #03045e;
 }
 
 .brand-container{
@@ -32,15 +32,15 @@ body{
 .brand-container p {
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 400;
+    font-weight: bolder;
     font-size: 24px;
-    color: #03045e;
+    color: #fffffc;
 }
 
 .content{
     width: 310px;
     min-height: 239px;
-    background-color: #90e0ef;
+    background-color: #fffffc;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -52,18 +52,20 @@ body{
     font-family: "Nunito";
     font-style: normal;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 16px;
     color:#03045e;
     margin: 5px;
+
 }
 
 #prediction{
     font-family: "Nunito";
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 24px;
     color:#03045e;
     margin: 5px;
+    text-align: center;
 }
 
 #cc{

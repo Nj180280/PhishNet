@@ -15,16 +15,18 @@
     <meta name="author" content="PhishNet" />
 
     <link href="static/styles.css" rel="stylesheet" />
-    <title>URL detection</title>
+    <title>PhishNet</title>
   </head>
 
   <body>
+    <div class="brand-container">
+      <img src="static\logo.png" alt="" />
+      <p>PhishNet</p>
+    </div>
+
     <div class="form1" id="form1">
-      <div class="brand-container">
-        <img src="static\logo.png" alt="" />
-        <p>PhishNet</p>
-      </div>
       <form action="/" method="post">
+        <p class="info">Detect phishing or fraudulent links via an ML-powered  phishing link checker.</p>
         <input
           type="text"
           class="form__input"
@@ -58,6 +60,86 @@
       </form>
     </div>
 
+    <div class="accordion-container">
+      <p class="faq-header">FAQ's</p>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          FAQ Question 1 <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Answer to question 1...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          FAQ Question 2 <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Answer to question 2...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          FAQ Question 3 <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Answer to question 3...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          FAQ Question 4 <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Answer to question 4...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          FAQ Question 5 <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Answer to question 5...</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          FAQ Question 6 <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Answer to question 6...</p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.querySelectorAll(".accordion-header").forEach((button) => {
+        button.addEventListener("click", () => {
+          const accordionContent = button.nextElementSibling;
+
+          button.classList.toggle("active");
+
+          if (button.classList.contains("active")) {
+            accordionContent.style.maxHeight =
+              accordionContent.scrollHeight + "px";
+          } else {
+            accordionContent.style.maxHeight = 0;
+          }
+
+          // Close other open accordion items
+          document
+            .querySelectorAll(".accordion-header")
+            .forEach((otherButton) => {
+              if (otherButton !== button) {
+                otherButton.classList.remove("active");
+                otherButton.nextElementSibling.style.maxHeight = 0;
+              }
+            });
+        });
+      });
+    </script>
+
     <script>
       let x = "{{xx}}";
       let num = x * 100;
@@ -70,14 +152,15 @@
         document.getElementById("prediction").innerHTML = label;
         document.getElementById("button1").style.display = "block";
         document.getElementById("buttons").style.justifyContent =
-          "space-between";
+          "space-evenly";
       } else if (0 <= x && x < 0.5) {
         var label = "Website is " + txtx + "% unsafe to use";
         document.getElementById("prediction").innerHTML = label;
         document.getElementById("button2").style.display = "block";
         document.getElementById("buttons").style.justifyContent =
-          "space-between";
+          "space-evenly";
       }
     </script>
+
   </body>
 </html>
