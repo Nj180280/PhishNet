@@ -131,9 +131,9 @@ class FeatureExtraction:
     # 7.SubDomains
     def SubDomains(self):
         dot_count = len(re.findall("\.", self.url))
-        if dot_count == 1:
+        if dot_count <= 3: 
             return 1
-        elif dot_count == 2:
+        elif dot_count == 4:
             return 0
         return -1
 

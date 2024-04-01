@@ -59,60 +59,74 @@
         </div>
       </form>
     </div>
-
-    <div class="accordion-container">
-      <p class="faq-header">FAQ's</p>
-
-      <div class="accordion-item">
-        <button class="accordion-header">
-          FAQ Question 1 <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Answer to question 1...</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          FAQ Question 2 <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Answer to question 2...</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          FAQ Question 3 <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Answer to question 3...</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          FAQ Question 4 <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Answer to question 4...</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          FAQ Question 5 <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Answer to question 5...</p>
-        </div>
-      </div>
-      <div class="accordion-item">
-        <button class="accordion-header">
-          FAQ Question 6 <span class="icon">+</span>
-        </button>
-        <div class="accordion-content">
-          <p>Answer to question 6...</p>
-        </div>
-      </div>
+    <div class="about">
+      <p class="about-header">About PhishNet</p>
+      <img  src="static\WhatsApp Image 2024-04-02 at 00.20.00_b32a4f85.jpg" alt="">
     </div>
 
+    <div class="accordion-container">
+      <p class="faq-header">Strategies</p>
+
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Long URL <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Determines if the URL length exceeds a certain threshold.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Domain Registration length<span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Calculates the age of the domain based on registration and expiration dates.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          HTTPS Domain URL<span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Checks if the domain name contains "https".</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Abnormal URL<span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Compares the response text of the URL with the WHOIS response.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Iframe Redirection<span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Checks for iframes or frame borders in the HTML.</p>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <button class="accordion-header">
+          Age of Domain <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Calculates the age of the domain in months.</p>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <button class="accordion-header">
+          @ Symbol  <span class="icon">+</span>
+        </button>
+        <div class="accordion-content">
+          <p>Checks if the URL contains the "@" symbol.</p>
+        </div>
+      </div>
+      
+    </div>
+    
     <script>
       document.querySelectorAll(".accordion-header").forEach((button) => {
         button.addEventListener("click", () => {

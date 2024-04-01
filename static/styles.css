@@ -5,7 +5,7 @@ body{
 }
 
 .brand-container {
-  background-color: #03045e;
+  background-color: #1f1f24;
   padding: 3dvh 0;
   position: fixed;
   top: 0;
@@ -41,7 +41,7 @@ body{
   justify-content: center;
   width: 100%;
   height: 100vh;
-  background-color: #03045e;
+  background-color: #1f1f24;
   padding-top: 5dvh;
 }
 
@@ -78,9 +78,10 @@ body{
   font-style: normal;
   font-weight:600;
   font-size: 1.2rem;
-  color: #03045e;
+  color: #1f1f24;
   margin-bottom: 1dvh;
   margin-top: 0;
+  text-align: center;
 }
 
 #prediction {
@@ -88,7 +89,7 @@ body{
   font-style: normal;
   font-weight: bolder;
   font-size: 2rem;
-  color: #03045e;
+  color: #1f1f24;
   margin-bottom: 3dvh;
   margin-top: 0;
 }
@@ -99,8 +100,8 @@ body{
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  color: #fffffc;
+  background-color:#1f1f24;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -110,8 +111,8 @@ body{
 }
 
 .button:hover {
-  background-color:#03045e;
-  box-shadow: 0px 15px 20px rgba(52, 46, 229, 0.4);
+  background-color:#1f1f24;
+  box-shadow: 0px 15px 20px rgba(62, 61, 65, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
@@ -126,8 +127,8 @@ body{
   text-transform: uppercase;
   letter-spacing: 2.5px;
   font-weight: 500;
-  color: #000;
-  background-color: #fff;
+  color: #fffffc;
+  background-color:#1f1f24;
   border: none;
   border-radius: 45px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
@@ -139,8 +140,8 @@ body{
 
 .button1:hover,
 .button2:hover {
-  background-color: #03045e;
-  box-shadow: 0px 15px 20px rgba(52, 46, 229, 0.4);
+  background-color:#1f1f24;
+  box-shadow: 0px 15px 20px rgba(62, 61, 65, 0.4);
   color: #fff;
   transform: translateY(-7px);
 }
@@ -187,6 +188,30 @@ body {
   height: 100vh;
 } */
 
+.about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  background-color: #1f1f24;
+}
+
+.about-header{
+  font-family: "Nunito";
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 3rem;
+  color: #fffffc;
+  margin-bottom: 6dvh;
+  margin-top: 0;
+}
+
+.about img{
+  width: 70vw;
+}
+
 .accordion-container {
   width: 100%;
   display: flex;
@@ -194,8 +219,9 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #03045e;
+  background-color: #1f1f24;
 }
+
 
 .faq-header{
   font-family: "Nunito";
@@ -218,7 +244,7 @@ body {
 
 .accordion-header {
   background-color: #fffffc; /* Soft purple */
-  color: #03045e; /* White text */
+  color: #1f1f24; /* White text */
   padding: 15px;
   font-size: 18px;
   border: none;
